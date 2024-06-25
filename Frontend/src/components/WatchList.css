@@ -1,0 +1,53 @@
+/* Main container for the watchlist */
+.watchlist {
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.watchlist h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+/* Unordered list styling */
+.watchlist ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List items styling */
+.watchlist li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+/* Highlight each list item on hover */
+.watchlist li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Company name and stock symbol styling */
+.watchlist li span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Additional styling for the company and stock symbol */
+.watchlist li span::after {
+  content: " ";
+  font-weight: normal;
+  color: #666;
+}

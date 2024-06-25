@@ -1,0 +1,87 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Toggle Button */
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links li {
+    margin: 15px 0;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+}
+
+.navbar.active .navbar-links {
+  display: flex;
+}

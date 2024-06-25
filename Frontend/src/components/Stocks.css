@@ -1,0 +1,96 @@
+/* Stocks.css */
+
+/* General container styles */
+.stocks-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* List styles */
+.stocks-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.stock-item {
+  background: linear-gradient(135deg, #ffc107 0%, #4caf50 100%);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(33% - 20px); /* Default to 3-column layout */
+}
+
+.stock-item p {
+  margin: 5px 0;
+}
+
+.stock-company {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.stock-description {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.stock-price {
+  margin: 5px 0;
+}
+
+.stock-symbol {
+  font-style: italic;
+}
+
+/* Button styles */
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #004494;
+  transform: translateY(0);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .stock-item {
+    width: calc(50% - 20px); /* 2-column layout */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .stock-item {
+    width: calc(100% - 20px); /* 1-column layout */
+  }
+}

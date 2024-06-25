@@ -1,0 +1,18 @@
+.error-container {
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.error-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #d9534f; /* A reddish color to indicate an error */
+}
+
+.error-message {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #777;
+}
